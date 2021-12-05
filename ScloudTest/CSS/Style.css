@@ -1,0 +1,308 @@
+@charset "UTF-8";
+@font-face {
+  font-family: PTSans;
+  src: url(../Fonts/PTSans.ttf);
+}
+@font-face {
+  font-family: PTSansCaption;
+  src: url(../Fonts/PTSansCaption.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: PTSans;
+  color: #333333;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 84px;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+.header .header__selection {
+  width: 62.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .header .header__menu {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .header .header__search {
+    display: none;
+  }
+}
+.header .header__menu-item {
+  padding: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #333333;
+}
+.header .header__telephone {
+  font-family: PTSansCaption;
+  color: #6F6F6F;
+}
+.header .header__profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header .header__profile .header__login {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border: none;
+  font-size: 14px;
+  color: #6F6F6F;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.header .header__profile .header__reg {
+  font-size: 14px;
+  background-color: #FF6600;
+  width: 160px;
+  height: 48px;
+  border-radius: 50px;
+  border-style: none;
+  margin-left: 20px;
+  color: #ffffff;
+  font-family: PTSansCaption;
+}
+
+/*-------Header---------*/
+/*-------Content---------*/
+.body {
+  padding-top: 180px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.body .content {
+  width: 62.5%;
+  /*-------1C: Зарплата и управление персоналом 8---------*/
+  /*-------Основные возможности---------*/
+  /*-------Преимущества аренды 1С в облаке---------*/
+  /*-------Кому подойдет 1С: ЗУП 8?---------*/
+}
+.body .content .content__zarplata {
+  display: flex;
+  width: 100%;
+}
+.body .content .content__zarplata .contentzarplatatext .zarplataTitul {
+  font-family: PTSansCaption;
+  font-size: 40px;
+  color: #333333;
+  font-weight: bold;
+}
+.body .content .content__zarplata .contentzarplatatext .zarplataSell {
+  font-family: PTSansCaption;
+  font-size: 32px;
+  color: #FF6600;
+  margin: 30px 0px 30px 0px;
+  font-weight: bold;
+}
+.body .content .content__zarplata .contentzarplatatext .zarplataMainT {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.body .content .content__zarplata .contentzarplatatext .zarplataButton {
+  margin-top: 40px;
+  color: #ffffff;
+  width: 248px;
+  height: 48px;
+  border-radius: 50px;
+  border-style: none;
+  background-color: #FF6600;
+  font-weight: bold;
+  font-family: PTSansCaption;
+  font-size: 14px;
+}
+.body .content .content__zarplata .contentzarplatatext .zarplatamini {
+  margin-top: 16px;
+  color: #999999;
+}
+@media (max-width: 1150px) {
+  .body .content .content__zarplata .contentzarplatatext .zarplataTitul {
+    font-size: 24px;
+  }
+  .body .content .content__zarplata .contentzarplatatext .zarplataSell {
+    font-size: 24px;
+    margin: 16px 0px 20px 0px;
+  }
+  .body .content .content__zarplata .contentzarplatatext .zarplataButton {
+    margin-top: 30px;
+  }
+}
+.body .content .content__zarplata .contentzarplatapicture {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.body .content .content__zarplata .contentzarplatapicture .imgzarp {
+  width: 25.2vw;
+  height: 19.18rem;
+}
+@media (max-width: 1150px) {
+  .body .content .content__zarplata .contentzarplatapicture .imgzarp {
+    display: none;
+  }
+}
+.body .content .content__Keyfeatures {
+  margin-top: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.body .content .content__Keyfeatures .KeyfeaturesTitul {
+  font-family: PTSansCaption;
+  font-weight: bold;
+  float: left;
+  color: #333333;
+  font-size: 32px;
+}
+.body .content .content__Keyfeatures .content__Keyfeatures-Keyfeatureslist {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  margin-top: 18px;
+}
+@media (max-width: 1150px) {
+  .body .content .content__Keyfeatures .content__Keyfeatures-Keyfeatureslist {
+    flex-wrap: wrap;
+  }
+}
+.body .content .content__Keyfeatures .content__Keyfeatures-Keyfeatureslist .content__Keyfeatures-list {
+  list-style-image: url("../Img/MarkerList.svg");
+  padding-left: 32px;
+}
+.body .content .content__Keyfeatures .content__Keyfeatures-Keyfeatureslist .content__Keyfeatures-list .Keyfeaturesitem {
+  color: #333333;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.body .content .content__Rent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 110px;
+}
+.body .content .content__Rent .content__Rent-titul {
+  font-size: 32px;
+  font-family: PTSansCaption;
+  font-weight: bold;
+  color: #333333;
+}
+.body .content .content__Rent .content__Rent-itemsup {
+  display: flex;
+  width: 100%;
+  margin-top: 18px;
+}
+.body .content .content__Rent .content__Rent-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 140px;
+  width: 24rem;
+  margin: 12px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  color: #333333;
+  font-size: 18px;
+}
+.body .content .content__Rent .content__Rent-item .content__Rent-img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+.body .content .content__Rent .content__Rent-itemsdown {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .body .content .content__Rent .content__Rent-itemsdown {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .body .content .content__Rent .content__Rent-itemsup {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.body .content .content__ZUP {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 110px;
+}
+.body .content .content__ZUP .content__ZUP-titul {
+  font-size: 32px;
+  font-family: PTSansCaption;
+  font-weight: bold;
+  color: #333333;
+}
+.body .content .content__ZUP .content__ZUP-text {
+  margin-top: 23px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.body .content .content__ZUP .content__ZUP-pick {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+}
+.body .content .content__ZUP .content__ZUP-pick .content__ZUP-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.body .content .content__ZUP .content__ZUP-pick .content__ZUP-menu .content__ZUP-menu-button {
+  color: #333333;
+  background: #FFFFFF;
+  border: 2px solid #EAEAEA;
+  box-sizing: border-box;
+  border-radius: 39px;
+  font-family: PTSansCaption;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 15px 35px 15px 35px;
+}
+.body .content .content__ZUP .content__ZUP-pick .content__ZUP-menu .content__ZUP-menu-button:hover {
+  border-color: #FF6600;
+  color: #FF6600;
+}
+.body .content .content__ZUP .content__ZUP-pick .content__ZUP-item {
+  margin-top: 40px;
+  justify-content: space-around;
+}
+@media (max-width: 1200px) {
+  .body .content .content__ZUP .content__ZUP-pick .content__ZUP-item {
+    flex-wrap: wrap;
+  }
+}
+.body .content .content__ZUP .content__ZUP-pick .content__ZUP-item .ZUP-text {
+  font-family: PTSansCaption;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+}
+.body .content .content__ZUP .content__ZUP-pick .content__ZUP-item ul {
+  margin-top: 30px;
+  list-style-image: url(../Img/Vector.svg);
+}
+.body .content .content__ZUP .content__ZUP-pick .content__ZUP-item ul li {
+  margin-bottom: 20px;
+  padding-left: 32px;
+}/*# sourceMappingURL=Style.css.map */
